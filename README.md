@@ -6,6 +6,10 @@
 
 data_source文件夹中存储的是和数据源相关的WLST脚本，具体的使用见data_source/README.md
 
+# jms module
+
+jms_module文件夹中存储的是和jms模块相关的WLST脚本，具体的使用见jms_module/README.md
+
 # 注意事项
 
 ## commEnv.sh修改JAVA_HOME

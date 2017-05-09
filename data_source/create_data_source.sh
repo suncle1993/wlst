@@ -6,4 +6,4 @@ export PATH=$JAVA_HOME/bin:$PATH
 . $WL_HOME/server/bin/setWLSEnv.sh
 
 # 执行WLST脚本
-java weblogic.WLST create_data_source.py -p myDomain-ds.properties
+java weblogic.WLST create_data_source.py -p create_jms_server.properties

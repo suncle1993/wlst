@@ -15,10 +15,9 @@ WLST创建数据源（以Oracle数据源为例）总共有四种情况，按照�
 
 ```shell
 export WL_HOME=/weblogic/wlserver_10.3
-export JAVA_HOME=/weblogic/java/jdk1.6.0_45
 ```
 
-将以上两项修改为正确的路径。
+将以上两项修改为正确的路径。修改完成之后请确认$WL_HOME/server/bin/commEnv.sh中的JAVA_HOME是否已修改为实际的JAVA_HOME
 
 ## 修改create_data_source.properties
 

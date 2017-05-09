@@ -1,10 +1,14 @@
 # wlst
 
-此仓库用来存储所有常用的WLST脚本。以下按不同的Resource分类
+此仓库用来存储所有常用的WLST脚本。所有脚本在weblogic11版本测试通过，下面按照不同的Resource分类
 
 # data source
 
 data_source文件夹中存储的是和数据源相关的WLST脚本，具体的使用见data_source/README.md
+
+# jms server
+
+jms_server文件夹中存储的是和jms服务器相关的WLST脚本，具体的使用见jms_server/README.md
 
 # jms module
 

@@ -6,7 +6,7 @@ WLST创建jms服务器时需要指向weblogic server，weblogic server分为Serv
 
 ## 修改create_jms_server.sh
 
-此shell脚本是创建数据源的入口脚本，里面主要是设置环境变量，启动WLST环境，然后调用创建数据源的Jython脚本
+此shell脚本是创建JMS服务器的入口脚本，里面主要是设置环境变量，启动WLST环境，然后调用创建JMS服务器的Jython脚本
 
 ```shell
 export WL_HOME=/weblogic/wlserver_10.3

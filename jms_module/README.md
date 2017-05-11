@@ -1,12 +1,12 @@
 # jms_module脚本简介
 
-WLST创建jms服务器时需要指向Weblogic Cluster或者Weblogic Server，此脚本已支持Cluster和Server两种类型。
+WLST创建JMS模块时需要指向Weblogic Cluster或者Weblogic Server，此脚本已支持Cluster和Server两种类型。
 
 # jms_module脚本使用方法
 
 ## 修改create_jms_module.sh
 
-此shell脚本是创建数据源的入口脚本，里面主要是设置环境变量，启动WLST环境，然后调用创建数据源的Jython脚本
+此shell脚本是创建JMS模块的入口脚本，里面主要是设置环境变量，启动WLST环境，然后调用创建JMS模块的Jython脚本
 
 ```shell
 export WL_HOME=/weblogic/wlserver_10.3
@@ -16,7 +16,7 @@ export WL_HOME=/weblogic/wlserver_10.3
 
 ## 修改create_jms_module.properties
 
-create_jms_module.properties配置文件选项根据要创建的jms服务器的实际情况修改。示例如下：
+create_jms_module.properties配置文件选项根据要创建的JMS模块的实际情况修改。示例如下：
 
 ```properties
 # adminserver

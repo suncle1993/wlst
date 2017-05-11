@@ -14,6 +14,18 @@ jms_server文件夹中存储的是和jms服务器相关的WLST脚本，具体的
 
 jms_module文件夹中存储的是和jms模块相关的WLST脚本，具体的使用见jms_module/README.md
 
+# subdeployment
+
+subdeployment文件夹中存储的是和子部署相关的WLST脚本，具体的使用见subdeployment/README.md
+
+# connection_factory
+
+connection_factory文件夹中存储的是和连接工厂相关的WLST脚本，具体的使用见connection_factory/README.md
+
+# queue
+
+queue文件夹中存储的是和队列相关的WLST脚本，具体的使用见queue/README.md
+
 # 注意事项
 
 ## commEnv.sh修改JAVA_HOME

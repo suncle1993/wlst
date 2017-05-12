@@ -66,7 +66,7 @@ JAVA_HOME="/weblogic/java/jdk1.6.0_45"
 
 ---
 
-参考资料：
+**参考资料：**
 
 - [个人**重点推荐**的WLST **MBean机制**入门教程](http://www.beansoft.biz/weblogic/docs92/config_scripting/nav_edit.html)
 
@@ -80,3 +80,10 @@ JAVA_HOME="/weblogic/java/jdk1.6.0_45"
 - [Create distributed JMS destinations Tips](http://www.dba-oracle.com/t_weblogic_create_distributed_jms_destinations.htm)
 - [JMS module using WLST](http://wlstbyexamples.blogspot.com/2013/01/this-post-is-continous-series-of-jms.html#.WRVipmJ97Dc)
 - [WebLogic Scripting Tool (WLST) Overview](http://wlstbyexamples.blogspot.jp/2010/05/weblogic-server-weblogic-scripting-tool.html#.WRVodWJ97Dd)
+
+**常用术语：**
+
+- JMX：Java Management Extensions，即Java管理扩展，WebLogic管理页面就是基于JMX开发的。
+- MBean：Management Bean，管理豆子也即一个描述可管理资源的java对象。
+- cmo：WLST联机版提供的一个变量，表示当前的管理对象，这个对象随着路径的改变而改变。可以使用dir方法查看当前cmo提供的所有方法和属性。ls方法查看当前路径下所有的目录和文件。
+- JMS：Java Message Service，即Java消息服务。

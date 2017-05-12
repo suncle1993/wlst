@@ -6,7 +6,7 @@ WLST创建连接工厂时需要指定子部署和JNDI名称，而且连接工厂
 
 ## 修改create_connection_factory.sh
 
-此shell脚本是创建数据源的入口脚本，里面主要是设置环境变量，启动WLST环境，然后调用创建数据源的Jython脚本
+此shell脚本是创建连接工厂的入口脚本，里面主要是设置环境变量，启动WLST环境，然后调用创建连接工厂的Jython脚本
 
 ```shell
 export WL_HOME=/weblogic/wlserver_10.3

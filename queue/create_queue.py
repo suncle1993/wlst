@@ -28,7 +28,7 @@ queue_jndi_name = configProps.get('queue_jndi_name')
 queue_subdeployment = configProps.get('queue_subdeployment')
 queue_subdeployment_target_type = configProps.get('queue_subdeployment_target_type')
 queue_subdeployment_target_name = configProps.get('queue_subdeployment_target_name')
-queue_jms_moduel = configProps.get('queue_jms_moduel')
+queue_jms_module = configProps.get('queue_jms_module')
 
 # 输出变量
 print 'adminserver_username=', adminserver_username
@@ -41,7 +41,7 @@ print 'queue_jndi_name=', queue_jndi_name
 print 'queue_subdeployment=', queue_subdeployment
 print 'queue_subdeployment_target_type=', queue_subdeployment_target_type
 print 'queue_subdeployment_target_name=', queue_subdeployment_target_name
-print 'queue_jms_moduel=', queue_jms_moduel
+print 'queue_jms_module=', queue_jms_module
 
 # 连接管理节点
 def connectToAdminserver():
@@ -80,7 +80,7 @@ try:
     connectToAdminserver()
     startTransaction()
     # starting to create queue
-    create_queue(queue_name, queue_jndi_name, queue_subdeployment, queue_subdeployment_target_type, queue_subdeployment_target_name, queue_jms_moduel)
+    create_queue(queue_name, queue_jndi_name, queue_subdeployment, queue_subdeployment_target_type, queue_subdeployment_target_name, queue_jms_module)
     endTransaction()
     disconnect()
     exit()

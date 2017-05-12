@@ -26,7 +26,7 @@ adminserver_port = configProps.get('adminserver_port')
 connection_factory_name = configProps.get('connection_factory_name')
 connection_factory_jndi_name = configProps.get('connection_factory_jndi_name')
 connection_factory_subdeployment = configProps.get('connection_factory_subdeployment')
-connection_factory_jms_moduel = configProps.get('connection_factory_jms_moduel')
+connection_factory_jms_module = configProps.get('connection_factory_jms_module')
 
 # 输出变量
 print 'adminserver_username=', adminserver_username
@@ -37,7 +37,7 @@ print 'adminserver_port=', adminserver_port
 print 'connection_factory_name=', connection_factory_name
 print 'connection_factory_jndi_name=', connection_factory_jndi_name
 print 'connection_factory_subdeployment=', connection_factory_subdeployment
-print 'connection_factory_jms_moduel=', connection_factory_jms_moduel
+print 'connection_factory_jms_module=', connection_factory_jms_module
 
 # 连接管理节点
 def connectToAdminserver():
@@ -79,7 +79,7 @@ try:
     connectToAdminserver()
     startTransaction()
     # starting to create connection factory
-    create_connection_factory(connection_factory_name, connection_factory_jndi_name, connection_factory_subdeployment, connection_factory_jms_moduel)
+    create_connection_factory(connection_factory_name, connection_factory_jndi_name, connection_factory_subdeployment, connection_factory_jms_module)
     endTransaction()
     disconnect()
     exit()

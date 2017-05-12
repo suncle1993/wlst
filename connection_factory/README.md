@@ -37,7 +37,7 @@ connection_factory_jndi_name=XjxtOuterGapFactory-0
 # 连接工厂子部署
 connection_factory_subdeployment=subdeployment-hahaha
 # 连接工厂所在的JMS模块名称
-connection_factory_jms_moduel=SystemModule-hahaha
+connection_factory_jms_module=SystemModule-hahaha
 ```
 
 其中，JMS模块名称和连接工厂子部署必须已经存在。

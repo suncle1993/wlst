@@ -25,7 +25,7 @@ adminserver_port = configProps.get('adminserver_port')
 
 subdeployment_name = configProps.get('subdeployment_name')
 subdeployment_target_type = configProps.get('subdeployment_target_type')
-subdeployment_target_name = configProps.get('subdeployment_target_name')、
+subdeployment_target_name = configProps.get('subdeployment_target_name')
 jms_module_name = configProps.get('jms_module_name')
 
 

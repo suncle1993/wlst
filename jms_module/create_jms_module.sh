@@ -4,4 +4,4 @@ export WL_HOME=/weblogic/wlserver_10.3
 . $WL_HOME/server/bin/setWLSEnv.sh
 
 # 执行WLST脚本
-java weblogic.WLST create_jms_module.py -p create_jms_module.properties
+java weblogic.WLST create_jms_module.py

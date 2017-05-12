@@ -4,4 +4,4 @@ export WL_HOME=/weblogic/wlserver_10.3
 . $WL_HOME/server/bin/setWLSEnv.sh
 
 # 执行WLST脚本
-java weblogic.WLST create_queue.py -p create_queue.properties
+java weblogic.WLST create_queue.py

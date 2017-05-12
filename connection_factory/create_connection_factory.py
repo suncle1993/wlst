@@ -25,8 +25,6 @@ adminserver_port = configProps.get('adminserver_port')
 
 connection_factory_name = configProps.get('connection_factory_name')
 connection_factory_jndi_name = configProps.get('connection_factory_jndi_name')
-connection_factory_target_type = configProps.get('connection_factory_target_type')
-connection_factory_target_name = configProps.get('connection_factory_target_name')
 connection_factory_subdeployment = configProps.get('connection_factory_subdeployment')
 connection_factory_jms_moduel = configProps.get('connection_factory_jms_moduel')
 
@@ -38,8 +36,6 @@ print 'adminserver_port=', adminserver_port
 
 print 'connection_factory_name=', connection_factory_name
 print 'connection_factory_jndi_name=', connection_factory_jndi_name
-print 'connection_factory_target_type=', connection_factory_target_type
-print 'connection_factory_target_name=', connection_factory_target_name
 print 'connection_factory_subdeployment=', connection_factory_subdeployment
 print 'connection_factory_jms_moduel=', connection_factory_jms_moduel
 
@@ -58,7 +54,7 @@ def endTransaction():
     activate()
 
 # 创建连接工厂：连接工厂默认指向当前JMS模块的目标
-def create_connection_factory(name, jndi_name, target_type, target_name, subdeployment, module):
+def create_connection_factory(name, jndi_name, subdeployment, module):
     cd('/JMSSystemResources')
     theJmsBean = cmo.lookupJMSSystemResource(module)
     if theJmsBean != None:
@@ -83,7 +79,7 @@ try:
     connectToAdminserver()
     startTransaction()
     # starting to create connection factory
-    create_connection_factory(connection_factory_name, connection_factory_jndi_name, connection_factory_target_type, connection_factory_target_name, connection_factory_subdeployment, connection_factory_jms_moduel)
+    create_connection_factory(connection_factory_name, connection_factory_jndi_name, connection_factory_subdeployment, connection_factory_jms_moduel)
     endTransaction()
     disconnect()
     exit()

@@ -1,6 +1,6 @@
 # connection_factory脚本简介
 
-
+WLST创建连接工厂时需要指定子部署和JNDI名称，而且连接工厂依赖于JMS模块，连接工厂的指向目标默认和JMS模块的目标一致。因此需要提前创建好JMS模块和子部署。
 
 # connection_factory脚本使用方法
 

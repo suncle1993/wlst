@@ -1,6 +1,12 @@
 # wlst
 
-此仓库用来存储所有常用的WLST脚本。所有脚本在weblogic11版本测试通过，下面按照不同的Resource分类
+此仓库用来存储所有常用的WLST脚本。所有脚本在weblogic11版本测试通过，下面按照不同的Resource分类。
+
+如果自己试验脚本，请注意执行顺序，weblogic的各个JMS资源之间有不同的相互依赖。建议顺序：
+
+jms module -> subdeployment -> connection_factory -> distributed_queue
+
+data source和jms server与JMS资源之间没有相互依赖关系。而非集群的队列必须要找一个单节点的环境试验。因此都需要单独处理。
 
 # data source
 
@@ -25,6 +31,10 @@ connection_factory文件夹中存储的是和连接工厂相关的WLST脚本，�
 # queue
 
 queue文件夹中存储的是和队列相关的WLST脚本，具体的使用见queue/README.md
+
+# distributed_queue
+
+distributed_queue文件夹中存储的是和分布式队列相关的WLST脚本，具体的使用见distributed_queue/README.md
 
 # 注意事项
 
@@ -56,4 +66,17 @@ JAVA_HOME="/weblogic/java/jdk1.6.0_45"
 
 ---
 
-每完成一个部分就补充一个部分
+参考资料：
+
+- [个人**重点推荐**的WLST **MBean机制**入门教程](http://www.beansoft.biz/weblogic/docs92/config_scripting/nav_edit.html)
+
+
+- [WebLogic Server 管理任务自动化](http://www.beansoft.biz/weblogic/docs92/config_scripting/config_WLS.html#wp1004872)
+
+
+- [Create a Data Source Using WebLogic Scripting Tool (WLST)](https://oracle-base.com/articles/web/wlst-create-data-source#properties)
+
+
+- [Create distributed JMS destinations Tips](http://www.dba-oracle.com/t_weblogic_create_distributed_jms_destinations.htm)
+- [JMS module using WLST](http://wlstbyexamples.blogspot.com/2013/01/this-post-is-continous-series-of-jms.html#.WRVipmJ97Dc)
+- [WebLogic Scripting Tool (WLST) Overview](http://wlstbyexamples.blogspot.jp/2010/05/weblogic-server-weblogic-scripting-tool.html#.WRVodWJ97Dd)

@@ -36,6 +36,14 @@ queue文件夹中存储的是和队列相关的WLST脚本，具体的使用见qu
 
 distributed_queue文件夹中存储的是和分布式队列相关的WLST脚本，具体的使用见distributed_queue/README.md
 
+# check_weblogic_jvm
+
+check_weblogic_jvm文件夹中存储的是和检查weblogic运行时的jvm信息的WLST脚本，具体的使用见check_weblogic_jvm/README.md
+
+# check_stuck_thread
+
+check_stuck_thread文件夹中存储的是和检查weblogic运行时的stuck线程的WLST脚本，具体的使用见check_stuck_thread/README.md
+
 # 注意事项
 
 ## commEnv.sh修改JAVA_HOME
@@ -80,6 +88,7 @@ JAVA_HOME="/weblogic/java/jdk1.6.0_45"
 - [Create distributed JMS destinations Tips](http://www.dba-oracle.com/t_weblogic_create_distributed_jms_destinations.htm)
 - [JMS module using WLST](http://wlstbyexamples.blogspot.com/2013/01/this-post-is-continous-series-of-jms.html#.WRVipmJ97Dc)
 - [WebLogic Scripting Tool (WLST) Overview](http://wlstbyexamples.blogspot.jp/2010/05/weblogic-server-weblogic-scripting-tool.html#.WRVodWJ97Dd)
+- [ORACLE官网-获取运行时信息](http://docs.oracle.com/cd/E15523_01/web.1111/e13715/monitoring.htm#WLSTG231)
 
 **常用术语：**
 
@@ -87,3 +96,5 @@ JAVA_HOME="/weblogic/java/jdk1.6.0_45"
 - MBean：Management Bean，管理豆子也即一个描述可管理资源的java对象。
 - cmo：WLST联机版提供的一个变量，表示当前的管理对象，这个对象随着路径的改变而改变。可以使用dir方法查看当前cmo提供的所有方法和属性。ls方法查看当前路径下所有的目录和文件。
 - JMS：Java Message Service，即Java消息服务。
+- Stuck Thread：粘滞线程，执行时间超过“粘滞线程最长时间”（默认是600秒）的线程
+- Hogging Thread：独占线程，执行时间超过了“正常执行时间”，但是还没有超过“粘滞线程最长时间”的线程。其中“正常执行时间”的长短由weblogic内部维护，是根据前几次正常执行的时间取平均。
